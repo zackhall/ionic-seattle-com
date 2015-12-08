@@ -3,6 +3,16 @@
 	margin-bottom: 0;
 }
 
+.ionic-nav .navbar-toggle .icon-bar {
+	background-color: #4b8bf4;
+}
+
+@media(min-width: 320px) {
+	.ionic-masthead {
+		padding: 25px 0;
+	}
+}
+
 @media(min-width:768px) {
 	.ionic-masthead {
 		padding: 80px 0;
@@ -68,6 +78,7 @@
 .featurette {
 	text-align: center;
 	border-bottom: 1px solid #e5e5e5;
+	padding: 25px 0;
 }
 
 .googlemap {
@@ -109,4 +120,11 @@
 .sh-featurette a:hover {
 	text-decoration: none;
 	color: #fff;
+}
+
+.ionic-footer {
+	padding: 50px 0;
+	color: #99979c;
+	background-color: #2a2730;
+	text-align: center;
 }
