@@ -35,24 +35,25 @@
 					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand">Ionic Seattle</a>
+				<a href="#" class="navbar-brand">Ionic Seattle</a>
 			</div>
 			<nav id="bs-navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a>About</a>
+						<a href="#masthead">About</a>
 					</li>
 					<li>
-						<a>Events</a>
+						<a href="#next-meetup">Next meetup</a>
 					</li>
 					<li>
-						<a>Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main class="ionic-masthead" id="content" role="main">
+		<a name="masthead"></a>
 		<div class="container">
 			<span>
 				<a>
@@ -69,11 +70,74 @@
 		</div>
 	</main>
 
-    <h1>Hello, Seattle!</h1>
+	<div class="featurette">
+		<a name="next-meetup"></a>
+		<div class="container">
+			<h1><small>Next meetup</small></h1>
+			<h1>Wed, Jan 13th 2015 @ Startup Hall</h1>
+			<p>It's time for our next meetup! We'll hear from some speakers on Ionic. Feel free to submit an idea for a talk to Zack Hall at zackhall@outlook.com or @zthall.</p> <p><i><b>Food and beer</b></i> will be provided for the attendees. </p> <p><br/>To help out by sponsoring this meetup or for questions, ideas, and feedback, please contact your organizer Zack Hall at zackhall@outlook.com or @zthall.</p> <p><br/><b>What is Ionic?</b></p> <p>Ionic is an open-source SDK for hybrid mobile app development. Built on top of AngularJS and Apache Cordova, Ionic provides tools and services for developing hybrid mobile apps using web technologies like HTML5, CSS, and Sass.</p> 
+			<p><br/><b>Agenda</b></p> <p>6:00 PM - Doors open. Drinks and food. Socializing </p> <p>6:30 PM - Talks begin.</p> <p>7:45 PM - End of talks. Q/A. Socializing.</p>
+			<!-- <div class="row">
+				<div class="col-md-8">
+					<p>
+						This is the left side. This is the left side. This is the left side. This is the left side.
+					</p>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="map googlemap">
+		<div class="overlay"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.4318852729307!2d-122.31819618444071!3d47.656605792515556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014f391bf3e67%3A0x827fc729870b9ccd!2sStartup+Hall!5e0!3m2!1sen!2sus!4v1449556307286" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+	<div class="featurette sh-featurette">
+		<div class="container">
+			<h1><small>Thanks for your support</small></h1>
+			<img src="img/startup-hall.png" style="height:150px;width:150px;">
+			<!-- <h1>Startup Hall</h1> -->
+			<p class="lead">
+				Startup Hall is a Seattle hub for entrepreneurs. It is born out of a partnership with the University of Washington, Techstars, and Founders' Co-op. If you're interested in learning more about their hub or seeing upcoming events, check out their website at <a href="http://startuphall.org">startuphall.org</a>.
+			</p>
+		</div>
+	</div>
+
+	<div class="featurette">
+		<a name="contact"></a>
+		<h1>Contact the organizers</h1>
+		<p class="lead">Submit ideas for talks, requests for sponsorship, or feedback.</p>
+		<div class="container">
+			  <form action="https://formspree.io/zackhall@outlook.com" method="POST">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="emailAddr" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				  	<textarea type="text" name="content" class="form-control" rows="5" placeholder="What would you like to say?"></textarea>
+				  </div>
+				  <input type="hidden" name="_next" value="/thanks/">
+			      <input type="hidden" name="_subject" value="New submission!">
+			      <input type="text" name="_gotcha" style="display:none">
+				  <button type="submit" class="btn btn-outline btn-lg">Submit</button>
+				</form>
+		</div>
+	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript">
+    	$('.googlemap').click(function () {
+		    $('.googlemap iframe').css("pointer-events", "auto");
+		});
+
+		$( ".googlemap" ).mouseleave(function() {
+		  $('.googlemap iframe').css("pointer-events", "none"); 
+		});
+    </script>
   </body>
 </html>
