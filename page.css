@@ -128,3 +128,7 @@
 	background-color: #2a2730;
 	text-align: center;
 }
+
+img.speaker {
+    border-radius: 50%;
+}
