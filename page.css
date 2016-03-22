@@ -84,6 +84,11 @@
 	padding-top: 0;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .row.full {
 	height: 100%;
 }
@@ -160,8 +165,8 @@ div.img {
 }
 
 div.img img{
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .speaker div.img img {
@@ -192,8 +197,13 @@ div.img img{
 }
 
 .sh-featurette {
-	background-color: #71bd00;
+	background-color: #0078D7;
 	color: #fff;
+}
+
+.sh-featurette small {
+	color: #fff;
+	font-size: 0.5em;
 }
 
 .sh-featurette img {
@@ -201,12 +211,13 @@ div.img img{
 }
 
 .sh-featurette a {
+	color: #fff;
 	border-bottom: 2px solid #fff;
 }
 
 .sh-featurette a:hover {
 	text-decoration: none;
-	color: #fff;
+	border-bottom: 0;
 }
 
 .ionic-footer {
