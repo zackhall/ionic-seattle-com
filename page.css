@@ -38,6 +38,10 @@
 	font-size: 20px;
 }
 
+[class*="btn-"] {
+	margin: 5px;
+}
+
 .btn-outline-inverse {
 	color: #fff;
 	background-color: transparent;
@@ -76,7 +80,6 @@
 }
 
 .featurette {
-	padding: 100px 0;
 	text-align: center;
 }
 
@@ -104,9 +107,11 @@
 	border-left: 0;
 }
 
-.left {
-	border-right: 2px solid #4b8bf4;
-	padding-right: 50px;
+@media (min-width: 768px) {
+	.left {
+		border-right: 2px solid #4b8bf4;
+		padding-right: 50px;
+	}
 }
 
 .left .label,
@@ -152,9 +157,9 @@
 
 .row.talk,
 .row.speaker {
-	padding: 50px 0;
+	margin: 50px 0;
 	text-align: left;
-	height: 275px;
+	//height: 275px;
 }
 
 div.img {
@@ -167,6 +172,13 @@ div.img {
 div.img img{
 	max-width: 100%;
 	max-height: 100%;
+}
+
+@media (max-width: 768px) {
+	div.img img {
+		max-width: 200px;
+		max-height: 200px;
+	}
 }
 
 .speaker div.img img {
@@ -229,4 +241,11 @@ div.img img{
 
 img.speaker {
     border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+	.vertical-center {
+		display: flex;
+		align-items: center;
+	}
 }
